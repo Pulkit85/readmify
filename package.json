@@ -1,0 +1,46 @@
+{
+  "name": "readmify",
+  "version": "1.0.0",
+  "description": "⚡ Generate breathtaking, production-grade GitHub READMEs in seconds.",
+  "type": "module",
+  "main": "./dist/cli.js",
+  "bin": {
+    "readmify": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "readme",
+    "readme-generator",
+    "github",
+    "markdown",
+    "cli",
+    "documentation",
+    "shields-io",
+    "badges",
+    "developer-tools"
+  ],
+  "author": "Pulkit Bisht",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^9.0.0",
+    "commander": "^15.0.0",
+    "dotenv": "^18.0.8",
+    "ora": "^9.4.1",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/prompts": "^2.4.9",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
